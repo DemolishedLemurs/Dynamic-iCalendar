@@ -1,17 +1,30 @@
-# Dynamic-iCalendar
 git clone https://github.com/your-username/dynamic-calendar.git
+
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 import pytz
-import os
 
 # Set timezone for events
 timezone = pytz.timezone("America/New_York")
 
-# Sample dynamic events (in a real setup, these might come from an API or database)
+# PGA Tour 2025 schedule events
 events = [
-    {"summary": "Team Meeting", "location": "Zoom", "start": datetime.now() + timedelta(days=1), "end": datetime.now() + timedelta(days=1, hours=1)},
-    {"summary": "Project Deadline", "location": "Online", "start": datetime.now() + timedelta(days=5), "end": datetime.now() + timedelta(days=5, hours=2)},
+    {"summary": "The Sentry", "location": "Kapalua, HI", "start": datetime(2025, 1, 9), "end": datetime(2025, 1, 12)},
+    {"summary": "Sony Open in Hawaii", "location": "Honolulu, HI", "start": datetime(2025, 1, 16), "end": datetime(2025, 1, 19)},
+    {"summary": "The American Express", "location": "La Quinta, CA", "start": datetime(2025, 1, 23), "end": datetime(2025, 1, 26)},
+    {"summary": "Farmers Insurance Open", "location": "San Diego, CA", "start": datetime(2025, 1, 30), "end": datetime(2025, 2, 2)},
+    {"summary": "WM Phoenix Open", "location": "Scottsdale, AZ", "start": datetime(2025, 2, 6), "end": datetime(2025, 2, 9)},
+    {"summary": "The Genesis Invitational", "location": "Pacific Palisades, CA", "start": datetime(2025, 2, 13), "end": datetime(2025, 2, 16)},
+    {"summary": "The Honda Classic", "location": "Palm Beach Gardens, FL", "start": datetime(2025, 2, 20), "end": datetime(2025, 2, 23)},
+    {"summary": "Arnold Palmer Invitational", "location": "Orlando, FL", "start": datetime(2025, 3, 6), "end": datetime(2025, 3, 9)},
+    {"summary": "THE PLAYERS Championship", "location": "Ponte Vedra Beach, FL", "start": datetime(2025, 3, 13), "end": datetime(2025, 3, 16)},
+    {"summary": "Valero Texas Open", "location": "San Antonio, TX", "start": datetime(2025, 3, 27), "end": datetime(2025, 3, 30)},
+    {"summary": "Masters Tournament", "location": "Augusta, GA", "start": datetime(2025, 4, 10), "end": datetime(2025, 4, 13)},
+    {"summary": "RBC Heritage", "location": "Hilton Head, SC", "start": datetime(2025, 4, 17), "end": datetime(2025, 4, 20)},
+    {"summary": "Wells Fargo Championship", "location": "Charlotte, NC", "start": datetime(2025, 5, 1), "end": datetime(2025, 5, 4)},
+    {"summary": "PGA Championship", "location": "Charlotte, NC", "start": datetime(2025, 5, 15), "end": datetime(2025, 5, 18)},
+    {"summary": "U.S. Open", "location": "Pinehurst, NC", "start": datetime(2025, 6, 12), "end": datetime(2025, 6, 15)},
+    {"summary": "The Open Championship", "location": "St. Andrews, Scotland", "start": datetime(2025, 7, 17), "end": datetime(2025, 7, 20)}
 ]
 
 # Generate the calendar file
@@ -58,6 +71,8 @@ instructions = """
 
 print(instructions)
 
+
 git add .
 git commit -m "Add initial calendar file"
 git push origin main
+
