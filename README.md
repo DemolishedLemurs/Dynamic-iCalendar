@@ -7,14 +7,7 @@ import pytz
 # Set timezone for events
 timezone = pytz.timezone("America/New_York")
 
-# PGA Tour 2025 schedule events
-events = [
-    {"summary": "The Sentry", "location": "Kapalua, HI", "start": datetime(2025, 1, 9), "end": datetime(2025, 1, 12)},
-    {"summary": "Sony Open in Hawaii", "location": "Honolulu, HI", "start": datetime(2025, 1, 16), "end": datetime(2025, 1, 19)},
-    {"summary": "The American Express", "location": "La Quinta, CA", "start": datetime(2025, 1, 23), "end": datetime(2025, 1, 26)},
-    {"summary": "Farmers Insurance Open", "location": "San Diego, CA", "start": datetime(2025, 1, 30), "end": datetime(2025, 2, 2)},
-    {"summary": "WM Phoenix Open", "location": "Scottsdale, AZ", "start": datetime(2025, 2, 6), "end": datetime(2025, 2, 9)},
-    {"summary": "The Genesis Invitational", "location": "Pacific Palisades, CA", "start": datetime(2025, 2, 13), "end": datetime(2025, 2, 16)},
+# sis Invitational", "location": "Pacific Palisades, CA", "start": datetime(2025, 2, 13), "end": datetime(2025, 2, 16)},
     {"summary": "The Honda Classic", "location": "Palm Beach Gardens, FL", "start": datetime(2025, 2, 20), "end": datetime(2025, 2, 23)},
     {"summary": "Arnold Palmer Invitational", "location": "Orlando, FL", "start": datetime(2025, 3, 6), "end": datetime(2025, 3, 9)},
     {"summary": "THE PLAYERS Championship", "location": "Ponte Vedra Beach, FL", "start": datetime(2025, 3, 13), "end": datetime(2025, 3, 16)},
